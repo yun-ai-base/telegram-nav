@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>📡 TG 资源导航</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <button class="mobile-toggle" id="menuToggle">☰</button>
+    <div class="overlay" id="overlay"></div>
+
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-header">
+        <div class="sidebar-logo">📡 TG 资源导航</div>
+        <p>Telegram 群组 · 频道 · 机器人</p>
+      </div>
+      <nav class="sidebar-nav" id="sidebarNav"></nav>
+      <div class="sidebar-footer">
+        <a href="https://github.com/AZeC4/TelegramGroup" target="_blank">数据来源</a>
+        <span>·</span>
+        <span id="updateDate"></span>
+      </div>
+    </aside>
+
+    <main class="main">
+      <div class="hero">
+        <h2>Telegram 群组 / 频道 / 机器人 合集</h2>
+        <p>全网最全的电报导航 · 精心筛选 · 一键直达</p>
+        <div class="hero-stats">
+          <div class="hero-stat"><div class="num" id="totalEntries">0</div><div class="label">收录条目</div></div>
+          <div class="hero-stat"><div class="num" id="totalSections">0</div><div class="label">分类</div></div>
+          <div class="hero-stat"><div class="num" id="totalLinks">0</div><div class="label">有效链接</div></div>
+        </div>
+        <div class="search-bar">
+          <span class="icon">🔍</span>
+          <input type="text" id="searchInput" placeholder="搜索名称、链接或描述…" autocomplete="off">
+        </div>
+      </div>
+      <div class="content" id="content">
+        <div class="loading">加载中…</div>
+      </div>
+    </main>
+
+    <button class="back-top" id="backTop">↑</button>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
