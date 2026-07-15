@@ -227,3 +227,5 @@ function bindEvents() {
     overlay.classList.remove('show');
   });
 }
+// Trigger Pages rebuild
+// Trigger Pages rebuild
